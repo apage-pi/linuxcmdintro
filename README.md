@@ -23,4 +23,5 @@ Commands/Programs Demonstrated w/ syntax:
 ### Running ###
 There are two ways to do this:
 1. Download the repository, unzip it, then run the main.py file.
-2. Run the docker image onedrive365/linuxcmdintro (docker pull onedrive365/linuxcmdintro:latest && docker run onedrive365/linuxcmdintro:latest)
+2. Download the repository, unzip it, then build the docker image.
+3. (Not implemented) Run the docker image onedrive365/linuxcmdintro (docker pull onedrive365/linuxcmdintro:latest && docker run onedrive365/linuxcmdintro:latest).
