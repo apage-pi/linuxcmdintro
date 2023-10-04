@@ -33,9 +33,9 @@ class introduction:
         print("Now, you try. Try to cd into the directory 'images'")
         self.cmd = input("intro@introsystem:~ $ ")
         while self.cmd != "cd images":
-            print("intro@introsystem:~ $")
             print("No, that's not quite right. They way cd works is this:")
             print("'cd <name of directory>'")
+            self.cmd = input("intro@introsystem:~ $ ")
         print("intro@introsystem:~/images $")
         print("")
         print(f"Good! The correct awnser was {self.cmd}!")
@@ -52,6 +52,7 @@ class introduction:
         while self.cmd != "ls":
             print("No, that's not quite right. They way ls works is this:")
             print("'ls'")
+            self.cmd = input("intro@introsystem:~ $ ")
         print("coolpic.png              family.jpg")
         print("me.webp")
         print("")
