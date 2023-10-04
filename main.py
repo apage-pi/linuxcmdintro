@@ -3,10 +3,11 @@ def beginintro(start):
         print("Ok, lets begin!")
 
 def main(): 
-    print("Welcome to the Linux Commands Intro! This is a short guide that tours you through basic commands")
-    print("and their Windows equivalents, if any.")
+    print("Welcome to the Linux Commands Intro! This is a short guide that tours you")
+    print("through basic commands and their Windows equivalents, if any.")
     print("")
-    print("Here is how to enter input into a command line: Type your response and press enter.")
+    print("Here is how to enter input into a command line: Type your response and")
+    print("press enter.")
     begin = input("Shall we begin (y/n)? ")
     beginintro(begin)
 
