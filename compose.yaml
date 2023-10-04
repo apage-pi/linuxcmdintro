@@ -1,0 +1,6 @@
+services:
+  mainservice:
+    build: 
+      context: .
+    entrypoint: /bin/bash
+    command: -c "python ./main.py"
