@@ -26,6 +26,7 @@ class introduction:
 
     def start(self):
         self.files = self.file()
+        self.sysadmin = self.SysAdmin()
         self.files.cd()
         self.files.ls()
         self.files.cat()
@@ -35,6 +36,7 @@ class introduction:
         self.files.nano()
         self.files.rm()
         self.files.grep()
+        self.sysadmin.apt()
 
     class file:
 
@@ -258,8 +260,33 @@ class introduction:
             print("")
             print(f"Good! The correct awnser was {self.cmd}!")
             print("")
-            print("Now, we will go over the next command, apt.")
+            print("Now, we go to chapter 2, System Administration-Related.")
             sleep(1.5)
+    class SysAdmin():
+        def __init__(self):
+            self.cmd = ""
+        def apt(self):
+            print("apt stands for Advanced Package Tool. It is equivalent to opening the app store")
+            print("and updating or installing stuff.")
+            print("apt's Windows equivalent on the command line is winget")
+            print("apt is more complex than any other command that we have gone through so far.")
+            print("The first part is updating the list of software, the repositories.")
+            print("It is done via sudo apt update.")
+            sleep(1.5)
+            print("Then to update the system, use sudo apt upgrade.")
+            print("To install something, use sudo apt install <package>.")
+            sleep(1.5)
+            print("Not all linux distrobutions use apt. We use it here because the biggest")
+            print("and most beginner-friendly distros (distrobutions) use it.")
+            sleep(1)
+            print("Some exceptions are:")
+            print("Fedora -- dnf")
+            print("CentOS & RHEL -- yum")
+            print("openSUSE -- zypper")
+            print("Arch Linux -- pacman")
+            sleep(1)
+            print("We won't go over this one because it is too complex for a simple demo.")
+            print("Lets move on, shall we?")
 
 
 intro = introduction()
