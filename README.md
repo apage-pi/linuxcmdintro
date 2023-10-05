@@ -5,7 +5,7 @@ This is an Interactive Introduction to Linux commands and their Windows counterp
 It was originally made for a school project but decided to post it to the internet so others could use it.
 Commands/Programs Demonstrated w/ syntax:
 
-FIle-based
+FIle-based:
 - ls
 - cd
 - echo
@@ -16,6 +16,7 @@ FIle-based
 - grep
 - mv
 - rm
+
 System Administration-based:
 - apt/dnf/yum/pacman
 - lynx
