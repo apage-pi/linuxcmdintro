@@ -34,6 +34,7 @@ class introduction:
         self.files.less()
         self.files.nano()
         self.files.rm()
+        self.files.grep()
 
     class file:
 
@@ -234,6 +235,30 @@ class introduction:
             print(f"Good! The correct awnser was {self.cmd}!")
             print("")
             print("Now, we will go over the next command, grep.")
+            sleep(1.5)
+
+        def grep(self):
+            print(
+                "grep stands for global regular expression parser."
+            )
+            print("It is akin to using the 'find all' command in a text editor")
+            print("grep's Windows equivalent is findstr.")
+            print("Here is how it works:")
+            print("grep <expression> <file>")
+            print("Now, you try. Try to take out all occurences of 'hi' in hihello.txt")
+            print("here is what hihello.txt looks like:")
+            run("cat hihello.txt")
+            self.cmd = input("intro@introsystem:~/documents $ ")
+            while self.cmd != "grep hi hihello.txt":
+                print("No, that's not quite right. They way ls works is this:")
+                print("'rm <file>'")
+                self.cmd = input("intro@introsystem:~/documents $ ")
+            run("grep hi hihello.txt")
+            sleep(1.5)
+            print("")
+            print(f"Good! The correct awnser was {self.cmd}!")
+            print("")
+            print("Now, we will go over the next command, apt.")
             sleep(1.5)
 
 
