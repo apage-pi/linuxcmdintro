@@ -33,6 +33,7 @@ class introduction:
         self.files.mv()
         self.files.less()
         self.files.nano()
+        self.files.rm()
 
     class file:
 
@@ -205,11 +206,34 @@ class introduction:
                 print("'nano <file>'")
                 self.cmd = input("intro@introsystem:~/documents $ ")
             run("nano myfile.txt")
+            print("Here is what you wrote! :")
+            run("cat myfile.txt")
             sleep(1.5)
             print("")
             print(f"Good! The correct awnser was {self.cmd}!")
             print("")
-            print("Now, we will go over the next command, nano.")
+            print("Now, we will go over the next command, rm.")
+            sleep(1.5)
+
+        def rm(self):
+            print(
+                "rm stands for remove. It is akin to permanently deleting a file or folder"
+            )
+            print("rm's Windows equivalent is del.")
+            print("Here is how it works:")
+            print("For a file: rm <file>")
+            print("For a folder: rm -r <folder>")
+            print("Now, you try. Try to delete the file 'randomfile.txt'")
+            self.cmd = input("intro@introsystem:~/documents $ ")
+            while self.cmd != "rm randomfile.txt":
+                print("No, that's not quite right. They way ls works is this:")
+                print("'rm <file>'")
+                self.cmd = input("intro@introsystem:~/documents $ ")
+            sleep(1.5)
+            print("")
+            print(f"Good! The correct awnser was {self.cmd}!")
+            print("")
+            print("Now, we will go over the next command, grep.")
             sleep(1.5)
 
 
