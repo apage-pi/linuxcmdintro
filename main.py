@@ -38,6 +38,7 @@ class introduction:
         self.files.grep()
         self.sysadmin.apt()
         self.sysadmin.lynx()
+        self.sysadmin.man()
 
     class file:
 
@@ -291,11 +292,19 @@ class introduction:
             sleep(1.5)
         def lynx(self):
             print("Lynx is a web browser, in the terminal")
-            print("It is very basic, anly loading basic HTML, but it works.")
+            print("It is very basic, only loading basic HTML, but it works.")
             print("It support downloads as well.")
             print("We won't go pver it, but you can research and learn about it on your")
             print("own time.")
-            print("We will finally move on to the next topic.")
+            print("We will move on to the final main topic.")
+            sleep(1)
+        def man(self):
+            print("man essentially the program that contains 'manuals' for each command")
+            print("It works like the less command does.")
+            print("Any good package will have a manpage to help with usage.")
+            print("We won't go pver it, but you can research and learn about it on your")
+            print("own time.")
+            print("We will finally wrap things up.")
             sleep(1)
 
 
