@@ -20,7 +20,7 @@ def input(prnt):
 class introduction:
     def __init__(self):
         self.cmd = ""
-    def intro(self):
+    def start(self):
         self.files = self.file()
         self.files.cd()
         self.files.ls()
@@ -135,7 +135,7 @@ def beginintro(start):
     if (start == "y") or (start == "Y"):
         print("Ok, lets begin!")
         print("Remember, you can exit at any time by pressing Ctrl + C (Cmd + C on macOS)")
-        intro.intro()
+        intro.start()
     else:
         print("Ok. Exiting.")
         exit()
