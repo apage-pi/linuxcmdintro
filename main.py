@@ -37,6 +37,7 @@ class introduction:
         self.files.rm()
         self.files.grep()
         self.sysadmin.apt()
+        self.sysadmin.lynx()
 
     class file:
 
@@ -287,6 +288,15 @@ class introduction:
             sleep(1)
             print("We won't go over this one because it is too complex for a simple demo.")
             print("Lets move on, shall we?")
+            sleep(1.5)
+        def lynx(self):
+            print("Lynx is a web browser, in the terminal")
+            print("It is very basic, anly loading basic HTML, but it works.")
+            print("It support downloads as well.")
+            print("We won't go pver it, but you can research and learn about it on your")
+            print("own time.")
+            print("We will finally move on to the next topic.")
+            sleep(1)
 
 
 intro = introduction()
