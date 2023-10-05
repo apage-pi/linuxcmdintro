@@ -28,6 +28,7 @@ class introduction:
         self.files.touch()
         self.files.mv()
         self.files.less()
+        self.files.nano()
     class file:
         def __init__(self):
             self.cmd = "" 
@@ -145,6 +146,28 @@ class introduction:
                 print("'less <file>'")
                 self.cmd = input("intro@introsystem:~/documents $ ")
             run("less ./hi.txt")
+            sleep(1.5)
+            print("")
+            print(f"Good! The correct awnser was {self.cmd}!")
+            print("")
+            print("Now, we will go over the next command, nano.")
+            sleep(1.5)
+        def nano(self):
+            print("nano does not stand for anything. It is akin to opening a file in a")
+            print("text editor, or creating a new one and having it open in an editor.")
+            print("nano's Windows equivalent is edit.")
+            print("Here is how it works:")
+            print("nano <file>")
+            print("Now, you try. Try to execute nano on the file 'myfile.txt'")
+            print("To exit nano, press ctrl+X, then y, then enter.")
+            print("Write a file with whatever you want in it ok?")
+            sleep(3.5)
+            self.cmd = input("intro@introsystem:~/documents $ ")
+            while self.cmd != "nano myfile.txt":
+                print("No, that's not quite right. They way ls works is this:")
+                print("'nano <file>'")
+                self.cmd = input("intro@introsystem:~/documents $ ")
+            run("nano myfile.txt")
             sleep(1.5)
             print("")
             print(f"Good! The correct awnser was {self.cmd}!")
