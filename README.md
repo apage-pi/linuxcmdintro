@@ -18,7 +18,7 @@ FIle-based:
 - rm
 
 System Administration-based:
-- apt/dnf/yum/pacman
+- apt/dnf/yum/pacman/zypper (not demonstrated, but showed how to use)
 - lynx (mentioned, not demonstrated)
 - man
 
