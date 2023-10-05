@@ -3,4 +3,4 @@ services:
     build: 
       context: .
     entrypoint: /bin/bash
-    command: -c "python ./main.py"
+    command: -c "python3.11 ./main.py"
