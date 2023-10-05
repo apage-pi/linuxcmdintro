@@ -4,4 +4,5 @@ ADD main.py ./
 ADD inpt.py ./
 ADD hi.txt ./
 ADD hihello.txt ./
+ADD LICENSE ./
 CMD ["python3.11", "./main.py"]
