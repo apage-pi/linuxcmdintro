@@ -27,6 +27,7 @@ class introduction:
         self.files.cat()
         self.files.touch()
         self.files.mv()
+        self.files.less()
     class file:
         def __init__(self):
             self.cmd = "" 
@@ -75,7 +76,8 @@ class introduction:
             print("Now, we will go over the next command, cat.")
             sleep(1.5)
         def cat(self):
-            print("cat stands for 'concatenate'. This is akin to opening a read-only file.")
+            print("cat stands for 'concatenate'. This is akin to opening a read-only file,")
+            print("but in a viewer wihout a scrollbar")
             print("cat's Windows equivalent is type.")
             print("Here is how it works:")
             print("cat <file>")
@@ -111,7 +113,8 @@ class introduction:
             print("Now, we will go over the next command, mv.")
             sleep(1.5)
         def mv(self):
-            print("mv stands for move. It is akin to dragging and dropping a file, having it move.")
+            print("mv stands for move. It is akin to dragging and dropping a file,")
+            print("having it move, or renamig.")
             print("mv can also be used to rename, making it more useful.")
             print("mv's Windows equivalent is move.")
             print("Here is how it works:")
@@ -127,6 +130,26 @@ class introduction:
             print(f"Good! The correct awnser was {self.cmd}!")
             print("")
             print("Now, we will go over the next command, less.")
+            sleep(1.5)
+        def less(self):
+            print("less does not stand for anything. It is akin to opening a read-only file,")
+            print("but in a viewer with a scroll bar")
+            print("less's Windows equivalent is more.")
+            print("Here is how it works:")
+            print("less <file>")
+            print("Now, you try. Try to execute less on the file 'hi.txt'")
+            print("To exit less, press q.")
+            self.cmd = input("intro@introsystem:~/documents $ ")
+            while self.cmd != "less hi.txt":
+                print("No, that's not quite right. They way ls works is this:")
+                print("'less <file>'")
+                self.cmd = input("intro@introsystem:~/documents $ ")
+            run("less ./hi.txt")
+            sleep(1.5)
+            print("")
+            print(f"Good! The correct awnser was {self.cmd}!")
+            print("")
+            print("Now, we will go over the next command, nano.")
             sleep(1.5)
 
 intro = introduction()
