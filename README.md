@@ -19,7 +19,7 @@ FIle-based:
 
 System Administration-based:
 - apt/dnf/yum/pacman
-- lynx
+- lynx (mentioned, not demonstrated)
 - man
 
 ### Running ###
