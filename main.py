@@ -15,6 +15,7 @@ def input(prnt):
         print(
             'If you are running with Docker, run the image with the flag "-it".'
         )
+        exit()
 
 class introduction:
     def __init__(self):
