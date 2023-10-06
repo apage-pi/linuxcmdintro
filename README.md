@@ -23,8 +23,26 @@ System Administration-based:
 - man
 
 ### Running ###
-There are two ways to do this:
-1. Download the executable, and run it.
-2. Download the repository, unzip it, then run the main.py file. (LINUX ONLY)
-3. Download the repository, unzip it, then build the docker image.
-4. (Not implemented) Run the docker image onedrive365/linuxcmdintro (docker pull onedrive365/linuxcmdintro:latest && docker run onedrive365/linuxcmdintro:latest).
+
+Dependencies if running the exe or main.py:
+nano, less, python3.11
+
+There are four ways to run this:
+1. Download the executable and run it (Linux only) 
+2. Download repo, run main.py (Linux only)
+3. Build a docker image manually, and run it with -it
+4. Pull the docker image, and run it with -it
+
+Docker instructions:
+
+If building manually:
+- Clone repo
+- Open terminal in repo
+- Run `docker build -t onedrive365/linuxcmdintro .`
+- After that is done, run `docker run -it --rm onedrive365/linuxcmdintro`
+
+If using the prebuilt image:
+- Run `docker pull onedrive365/linuxcmdintro`
+- Run `docker run -it --rm onedrive365/linuxcmdintro`
+
+Hope you have fun with this!
