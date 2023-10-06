@@ -175,7 +175,7 @@
  [],
  False,
  False,
- 1696596953,
+ 1696602743,
  [('run',
    '/home/runner/linuxcmdintro/.pythonlibs/lib/python3.10/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run',
    'EXECUTABLE')],
