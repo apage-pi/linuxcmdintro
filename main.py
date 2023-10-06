@@ -268,59 +268,96 @@ class introduction:
         def __init__(self):
             self.cmd = ""
         def apt(self):
+            print("")
             print("apt stands for Advanced Package Tool. It is equivalent to opening the app store")
             print("and updating or installing stuff.")
             print("apt's Windows equivalent on the command line is winget")
             print("apt is more complex than any other command that we have gone through so far.")
             print("The first part is updating the list of software, the repositories.")
             print("It is done via sudo apt update.")
-            sleep(1.5)
+            sleep(3)
             print("Then to update the system, use sudo apt upgrade.")
             print("To install something, use sudo apt install <package>.")
-            sleep(1.5)
+            sleep(3)
             print("Not all linux distrobutions use apt. We use it here because the biggest")
             print("and most beginner-friendly distros (distrobutions) use it.")
-            sleep(1)
+            sleep(3)
             print("Some exceptions are:")
             print("Fedora -- dnf")
             print("CentOS & RHEL -- yum")
             print("openSUSE -- zypper")
             print("Arch Linux -- pacman")
-            sleep(1)
+            sleep(3)
             print("We won't go over this one because it is too complex for a simple demo.")
             print("Lets move on, shall we?")
-            sleep(1.5)
+            sleep(5)
         def lynx(self):
+            print("")
             print("Lynx is a web browser, in the terminal")
             print("It is very basic, only loading basic HTML, but it works.")
             print("It support downloads as well.")
             print("We won't go pver it, but you can research and learn about it on your")
             print("own time.")
             print("We will move on to the final main topic.")
-            sleep(1)
+            sleep(3)
         def man(self):
+            print("")
             print("man essentially the program that contains 'manuals' for each command")
             print("It works like the less command does.")
             print("Any good package will have a manpage to help with usage.")
             print("We won't go pver it, but you can research and learn about it on your")
             print("own time.")
             print("We will finally wrap things up.")
+            sleep(3)
+    class outro:
+        def __init__(self) -> None:
+            self.cmd = ""
+        def out(self):
+            print("")
+            print("")
+            print("I hope this has given you an idea of what people actually")
+            print("do in a terminal, its not always hacking.")
+            print("Some people just use it because it is mroe efficient to use.")
+            print("Some people use it because it is more lightweight.")
+            print("Some people use it because it is the only way to do some things.")
+            print("macOS and Windows have their own terminals.")
+            sleep(3)
+            print("macOS's is named terminal. Windows has two: the classic Command Prompt,")
+            print("and the newer, more advanced, Powershell.")
+            print("If you want to try these Linux commands out, try to find a")
+            print("beginner-friendly linux distro, preferrably based on Debian, such as:")
+            print("KDE Neon, Linux Mint, Ubuntu, Zorin OS, and, if you are a it more advanced")
+            print("with system management, Debian Stable itself, which (If using Docker),")
+            print("is what is program is running on.")
+            print("For now, goodbye.")
+            sleep(5)
+            print("")
+            print("")
+            print("Check this project out at: https://github.com/apage-pi/linuxcmdintro")
+            print("Find some more of my projects here: https://github.com/apage-pi")
+            print("")
             sleep(1)
+            print("Goodbye!")
+            exit()
 
 
 intro = introduction()
+outro = introduction.outro()
 
 
 def beginintro(start):
-    if (start == "y") or (start == "Y"):
-        print("Ok, lets begin!")
-        print(
-            "Remember, you can exit at any time by pressing Ctrl + C (Cmd + C on macOS)"
-        )
-        intro.start()
-    else:
-        print("Ok. Exiting.")
-        exit()
+    while (start != "Y") or (start != "y") or (start != "N") or (start != "n"):
+        if (start == "y") or (start == "Y"):
+            print("Ok, lets begin!")
+            print(
+                "Remember, you can exit at any time by pressing Ctrl + C (Cmd + C on macOS)"
+            )
+            intro.start()
+            outro.out()
+
+        elif (start == "N") or (start == "n"):
+            print("Ok. Exiting.")
+            exit()
 
 
 def main():
